@@ -76,7 +76,7 @@ export default function Home() {
             <h3 className="pb-4 font-serif">
               Providing a showcase and strengthening ties
             </h3>
-            <p className="pb-6">
+            <p>
               JAH JAH Radio provides a showcase for local musicians, DJs,
               thinkers, moderators and content creators: an independent space
               for personal and intellectual expression through sound. It also
