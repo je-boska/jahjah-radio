@@ -36,7 +36,7 @@ export default function Home() {
           </span>
         </div>
       </section>
-      <section className="px-4 py-20 md:px-8">
+      <section className="px-4 py-12 md:px-8 md:py-20">
         <div className="mx-auto max-w-4xl text-center font-sans text-lg italic md:text-2xl xl:text-3xl">
           <p className="pb-6">
             Join us in Paris this Thursday, June 13, to celebrate the Snipes x
@@ -48,7 +48,7 @@ export default function Home() {
             Jah Radio with live performances, dj sets and talks.
           </p>
         </div>
-        <div className="flex flex-col items-center pt-20 text-center">
+        <div className="flex flex-col items-center pt-12 text-center md:pt-20">
           <div className="pb-8">
             <LocationIcon className="h-12 w-12 xl:h-20 xl:w-20" />
           </div>
@@ -119,7 +119,7 @@ export default function Home() {
         </div>
       </section>
       <section className="pb-40 pt-20">
-        <div className="mx-auto grid max-w-2xl grid-cols-2 gap-8 px-20">
+        <div className="mx-auto grid max-w-2xl grid-cols-2 items-center gap-8 px-20">
           <div>
             <Image
               src="/adidas.png"
@@ -130,7 +130,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              className="mt-10"
+              className="mt-4"
               src="/snipes.png"
               alt="Snipes logo"
               height="143"
