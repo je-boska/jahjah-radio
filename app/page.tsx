@@ -118,7 +118,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="pb-40 pt-20">
+      <section className="pb-20 md:pb-40 md:pt-20">
         <div className="mx-auto grid max-w-2xl grid-cols-2 items-center gap-8 px-20">
           <div>
             <Image
