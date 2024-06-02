@@ -17,12 +17,12 @@ export default function RadioScreen({
         <h2 className="hidden font-serif text-xl md:block md:text-2xl xl:text-3xl">
           Now playing:
         </h2>
-        <div className="pr-6 md:pr-0">
+        <div className="pr-7 md:pr-0">
           <Marquee className="font-sans text-base italic md:text-xl xl:text-3xl">
             Live broadcast from Jah Jah x Adidas x Snipes celebration event
           </Marquee>
         </div>
-        <div className="absolute right-0 top-0 w-6 sm:top-2 md:w-10">
+        <div className="absolute right-1 top-1 w-5 sm:right-2 sm:top-2 md:w-10">
           {isPlaying ? <PlayIcon /> : <PauseIcon />}
         </div>
       </div>

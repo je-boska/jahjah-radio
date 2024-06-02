@@ -17,13 +17,13 @@ export default function Radio() {
   });
 
   return (
-    <div className="relative">
-      <RadioIllustration className="w-full px-4 md:px-8" />
+    <div className="relative mx-2 md:mx-8">
+      <RadioIllustration className="w-full" />
       <RadioScreen
-        className="absolute left-[8%] top-[61%] h-[24%] w-[61%] xl:left-[7%]"
+        className="absolute left-[4%] top-[61%] h-[24%] w-[67%] xl:left-[7%]"
         isPlaying={isPlaying}
       />
-      <div className="absolute right-[18.5%] top-[60%] h-[26%] w-[9%]">
+      <div className="absolute right-[17%] top-[60%] h-[26%] w-[9%]">
         <audio ref={player}>
           <source ref={source} />
           Your browser does not support the audio element.
