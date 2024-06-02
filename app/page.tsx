@@ -5,10 +5,10 @@ import Radio from "./components/Radio";
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <section className="pt-20 md:pb-20">
+      <section className="pt-12 md:pb-20 md:pt-20">
         <Radio />
         <Image
-          className="absolute right-4 top-4 w-32 md:right-8 md:top-8 md:w-56 xl:top-12 xl:w-80"
+          className="absolute right-4 top-4 w-28 md:right-8 md:top-8 md:w-56 xl:top-12 xl:w-80"
           src="/jahjah-logo.png"
           alt="Jah Jah Radio logo"
           width="328"
