@@ -64,7 +64,7 @@ export default function Home() {
       <section className="px-4 pb-20 md:px-8">
         <div className="grid border-4 border-black bg-JJ-lightGray font-sans text-base italic md:text-xl lg:grid-cols-3 lg:text-2xl xl:border-8">
           <div className="border-black p-4 lg:border-r-4 lg:p-8 xl:border-r-8">
-            <h3 className="pb-4 font-serif">
+            <h3 className="pb-4 font-serif text-lg">
               Creating connections through conversation, collaboration and
               community
             </h3>
@@ -74,7 +74,7 @@ export default function Home() {
               Our mission is to connect, inspire and empower through
               conversation, collaboration and community.
             </p>
-            <h3 className="pb-4 font-serif">Redefining narratives</h3>
+            <h3 className="pb-4 font-serif text-lg">Redefining narratives</h3>
             <p>
               We strive to redefine and refocus the narratives of local artistic
               communities, with a particular emphasis on Parisian perspectives.
@@ -84,7 +84,7 @@ export default function Home() {
             </p>
           </div>
           <div className="border-black p-4 lg:border-r-4 lg:p-8 xl:border-r-8">
-            <h3 className="pb-4 font-serif">
+            <h3 className="pb-4 font-serif text-lg">
               Providing a showcase and strengthening ties
             </h3>
             <p>
@@ -101,7 +101,7 @@ export default function Home() {
             </p>
           </div>
           <div className="p-4 lg:p-8">
-            <h3 className="pb-4 font-serif">Building bridges </h3>
+            <h3 className="pb-4 font-serif text-lg">Building bridges </h3>
             <p className="pb-4">
               We aspire to develop and encourage connections between young
               artists and creators from around the world, with programming
