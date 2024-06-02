@@ -20,7 +20,7 @@ export default function Radio() {
     <div className="relative mx-2 md:mx-8">
       <RadioIllustration className="w-full" />
       <RadioScreen
-        className="absolute left-[4%] top-[61%] h-[24%] w-[67%] xl:left-[7%]"
+        className="absolute left-[4%] top-[61%] h-[24%] w-[67%]"
         isPlaying={isPlaying}
       />
       <div className="absolute right-[17%] top-[60%] h-[26%] w-[9%]">

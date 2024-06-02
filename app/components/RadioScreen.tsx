@@ -13,16 +13,20 @@ export default function RadioScreen({
 }) {
   return (
     <div className={className}>
-      <div className="relative sm:pt-2 lg:pt-4 xl:pt-8">
-        <h2 className="hidden font-serif text-xl md:block md:text-2xl xl:text-3xl">
-          Now playing:
-        </h2>
-        <div className="pr-7 md:pr-0">
-          <Marquee className="font-sans text-base italic md:text-xl xl:text-3xl">
-            Live broadcast from Jah Jah x Adidas x Snipes celebration event
-          </Marquee>
+      <div className="relative flex h-full w-full items-center">
+        <div>
+          <h2 className="hidden pl-4 font-serif text-lg md:block lg:text-2xl xl:pb-2 xl:text-3xl">
+            NOW PLAYING:
+          </h2>
+          <div className="pr-7 md:pr-0">
+            <Marquee className="font-sans text-base italic md:text-xl xl:text-3xl">
+              <p className="pr-4">
+                Live broadcast from Jah Jah x Adidas x Snipes celebration event
+              </p>
+            </Marquee>
+          </div>
         </div>
-        <div className="absolute right-1 top-1 w-5 sm:right-2 sm:top-2 md:w-10">
+        <div className="absolute right-1 top-1/2 w-5 -translate-y-1/2 sm:right-2 sm:w-7 md:top-2 md:translate-y-0 lg:w-10">
           {isPlaying ? <PlayIcon /> : <PauseIcon />}
         </div>
       </div>
