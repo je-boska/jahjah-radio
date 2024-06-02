@@ -17,7 +17,7 @@ export default function Radio() {
   });
 
   return (
-    <div className="relative mx-2 md:mx-8">
+    <div className="relative mx-2 w-full max-w-[1920px] md:mx-8">
       <RadioIllustration className="w-full" />
       <RadioScreen
         className="absolute left-[4%] top-[61%] h-[24%] w-[67%]"
