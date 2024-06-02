@@ -4,6 +4,15 @@ import LocationIcon from "./components/icons/LocationIcon";
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <section className="pb-80">
+        <Image
+          className="absolute right-20 top-12"
+          src="/jahjah-logo.png"
+          alt="Jah Jah Radio logo"
+          width="328"
+          height="182"
+        />
+      </section>
       <section className="px-4 py-20 text-center md:px-8">
         <h2 className="pb-4 font-serif text-2xl md:text-4xl xl:text-7xl">
           Thursday June 13th
