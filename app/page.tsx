@@ -62,8 +62,8 @@ export default function Home() {
         </div>
       </section>
       <section className="px-4 pb-20 md:px-8">
-        <div className="grid border-4 border-black bg-JJ-lightGray font-sans text-base italic md:text-xl lg:grid-cols-3 lg:text-2xl">
-          <div className="border-black p-4 lg:border-r-4 lg:p-8">
+        <div className="grid border-4 border-black bg-JJ-lightGray font-sans text-base italic md:text-xl lg:grid-cols-3 lg:text-2xl xl:border-8">
+          <div className="border-black p-4 lg:border-r-4 lg:p-8 xl:border-r-8">
             <h3 className="pb-4 font-serif">
               Creating connections through conversation, collaboration and
               community
@@ -83,7 +83,7 @@ export default function Home() {
               sounds and ideas from diverse cultures and global influences.
             </p>
           </div>
-          <div className="border-black p-4 lg:border-r-4 lg:p-8">
+          <div className="border-black p-4 lg:border-r-4 lg:p-8 xl:border-r-8">
             <h3 className="pb-4 font-serif">
               Providing a showcase and strengthening ties
             </h3>
