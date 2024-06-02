@@ -25,7 +25,7 @@ export default function Home() {
         </p>
       </section>
       <section className="px-4 md:px-8">
-        <div className="grid grid-cols-[1fr,5fr] border-4 border-black bg-JJ-lightGray p-8 font-serif text-2xl md:block md:text-center md:text-4xl xl:border-8 xl:text-7xl">
+        <div className="grid grid-cols-[1fr,5fr] border-4 border-black bg-JJ-lightGray p-4 font-serif text-2xl md:block md:p-8 md:text-center md:text-4xl xl:border-8 xl:text-7xl">
           <span className="pr-2 xl:pr-4">15:00</span>
           <span className="text-right text-JJ-blue md:pr-2 xl:pr-4">
             Kikelomo
