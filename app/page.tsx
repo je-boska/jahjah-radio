@@ -15,7 +15,7 @@ export default function Home() {
           height="182"
         />
       </section>
-      <section className="px-4 py-20 text-center md:px-8">
+      <section className="px-4 py-12 text-center md:px-8 md:py-20">
         <h2 className="pb-4 font-serif text-2xl md:text-4xl xl:text-7xl">
           Thursday June 13th
         </h2>
