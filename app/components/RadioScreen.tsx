@@ -14,13 +14,16 @@ export default function RadioScreen({
   return (
     <div className={className}>
       <div className="relative flex h-full w-full items-center">
-        <div>
+        <div className="w-full">
           <h2 className="hidden pl-4 font-serif text-lg md:block lg:text-2xl xl:pb-2 xl:text-3xl">
             NOW PLAYING:
           </h2>
-          <div className="pr-7 md:pr-0">
-            <Marquee className="font-sans text-base italic md:text-xl xl:text-3xl">
-              <p className="pr-4">
+          <div className="w-full pr-7 md:pr-0">
+            <Marquee
+              className="w-full font-sans text-base italic md:text-xl xl:text-3xl"
+              autoFill
+            >
+              <p className="pr-8">
                 Live broadcast from Jah Jah x Adidas x Snipes celebration event
               </p>
             </Marquee>
