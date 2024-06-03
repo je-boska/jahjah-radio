@@ -8,8 +8,9 @@ import PlayButtonIllustration from "./illustrations/PlayButtonIllustration";
 import cx from "classnames";
 
 export default function Radio() {
-  const clickAudio = new Audio("click.wav");
-  clickAudio.volume = 0.75;
+  const clickAudio = useRef<HTMLAudioElement | undefined>(
+    typeof Audio !== "undefined" ? new Audio("click.wav") : undefined,
+  );
 
   const player = useRef<HTMLAudioElement>(null);
   const source = useRef<HTMLSourceElement>(null);
@@ -26,7 +27,7 @@ export default function Radio() {
     } else {
       play();
     }
-    clickAudio.play();
+    clickAudio?.current?.play();
   }
 
   return (
