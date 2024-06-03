@@ -5,8 +5,12 @@ import RadioScreen from "./RadioScreen";
 import { useRef } from "react";
 import usePlayerState from "../hooks/usePlayerState";
 import PlayButtonIllustration from "./illustrations/PlayButtonIllustration";
+import cx from "classnames";
 
 export default function Radio() {
+  const clickAudio = new Audio("click.wav");
+  clickAudio.volume = 0.75;
+
   const player = useRef<HTMLAudioElement>(null);
   const source = useRef<HTMLSourceElement>(null);
 
@@ -16,6 +20,15 @@ export default function Radio() {
     url: "https://s5.radio.co/s23b8ada46/listen",
   });
 
+  function handleClick() {
+    if (isPlaying) {
+      pause();
+    } else {
+      play();
+    }
+    clickAudio.play();
+  }
+
   return (
     <div className="relative mx-2 w-full max-w-[1920px] md:mx-8">
       <RadioIllustration className="w-full" />
@@ -23,13 +36,21 @@ export default function Radio() {
         className="absolute left-[4%] top-[61%] h-[24%] w-[67%]"
         isPlaying={isPlaying}
       />
-      <div className="absolute right-[17%] top-[60%] h-[26%] w-[9%]">
+      <div
+        className={cx("absolute  h-[26%] w-[9%]", {
+          "right-[17%] top-[60%]": !isPlaying,
+          "right-[16.5%] top-[59%]": isPlaying,
+        })}
+      >
         <audio ref={player}>
           <source ref={source} />
           Your browser does not support the audio element.
         </audio>
-        <button className="h-full w-full" onClick={isPlaying ? pause : play}>
-          <PlayButtonIllustration className="h-full w-full" />
+        <button className="h-full w-full" onClick={handleClick}>
+          <PlayButtonIllustration
+            className="h-full w-full"
+            isPlaying={isPlaying}
+          />
         </button>
       </div>
     </div>
