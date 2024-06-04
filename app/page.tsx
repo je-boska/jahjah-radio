@@ -25,14 +25,35 @@ export default function Home() {
         </p>
       </section>
       <section className="px-4 md:px-8">
-        <div className="grid grid-cols-[1fr,5fr] border-4 border-black bg-JJ-lightGray p-4 font-serif text-2xl md:block md:p-8 md:text-center md:text-4xl xl:border-8 xl:text-7xl">
+        <div className="grid grid-cols-[1fr,5fr] border-4 border-black bg-JJ-lightGray p-4 font-serif text-2xl md:block md:py-8 md:text-center md:text-4xl xl:border-8 xl:text-7xl">
+          <span className="pr-2 xl:pr-4">11:00</span>
+          <span className="text-right text-JJ-blue md:pr-2 xl:pr-4">Daqui</span>
+          <span className="pr-2 xl:pr-4">12:00</span>
+          <span className="text-right text-JJ-blue md:pr-2 xl:pr-4">
+            Melanin (live + DJ)
+          </span>
+          <span className="pr-2 xl:pr-4">13:00</span>
+          <span className="text-right text-JJ-blue md:pr-2 xl:pr-4">
+            Dr Wax
+          </span>
+          <span className="pr-2 xl:pr-4">14:00</span>
+          <span className="text-right text-JJ-blue md:pr-2 xl:pr-4">
+            Bob Marlich
+          </span>
           <span className="pr-2 xl:pr-4">15:00</span>
           <span className="text-right text-JJ-blue md:pr-2 xl:pr-4">
-            Kikelomo
+            Podcast: How To Undertake Creative Projects In Paris? Animated by
+            Tuco Gadamn, with Melanin and Mosiah Levy
           </span>
           <span className="pr-2 xl:pr-4">16:00</span>
+          <span className="text-right text-JJ-blue md:pr-2 xl:pr-4">?</span>
+          <span className="pr-2 xl:pr-4">17:00</span>
           <span className="text-right text-JJ-blue md:pr-2 xl:pr-4">
-            Masaka Masaka
+            Monomite
+          </span>
+          <span className="pr-2 xl:pr-4">18:00</span>
+          <span className="text-right text-JJ-blue md:pr-2 xl:pr-4">
+            Mosiah Levy
           </span>
         </div>
       </section>
