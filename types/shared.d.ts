@@ -5,7 +5,7 @@ export interface EventInterface {
   startDateUtc: string;
   endDateUtc: string;
   description?: JSONContent;
-  duration: Minutes;
+  duration: number;
   timezone: string;
   color?: string;
   artistIds?: string[];

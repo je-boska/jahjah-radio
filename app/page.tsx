@@ -1,12 +1,20 @@
 import Image from "next/image";
 import LocationIcon from "./components/icons/LocationIcon";
 import Radio from "./components/Radio";
+import { LiveAPIResponse } from "@/types/shared";
 
-export default function Home() {
+export default async function Home() {
+  const liveData = (await fetch(
+    "https://api.radiocult.fm/api/station/jah-jah-radio/schedule/live",
+    {
+      headers: { "x-api-key": process.env.RADIO_CULT_API_KEY! },
+    },
+  ).then((data) => data.json())) as LiveAPIResponse;
+
   return (
     <main className="min-h-screen">
       <section className="flex justify-center pt-12 md:pb-20 md:pt-20">
-        <Radio />
+        <Radio liveData={liveData} />
         <Image
           className="absolute right-4 top-4 w-28 md:right-8 md:top-8 md:w-56 xl:top-12 xl:w-80"
           src="/jahjah-logo.png"

@@ -6,8 +6,9 @@ import { useRef } from "react";
 import usePlayerState from "../hooks/usePlayerState";
 import PlayButtonIllustration from "./illustrations/PlayButtonIllustration";
 import cx from "classnames";
+import { EventInterface, LiveAPIResponse } from "@/types/shared";
 
-export default function Radio() {
+export default function Radio({ liveData }: { liveData: LiveAPIResponse }) {
   const clickAudio = useRef<HTMLAudioElement | undefined>(
     typeof Audio !== "undefined" ? new Audio("click.wav") : undefined,
   );
@@ -18,7 +19,7 @@ export default function Radio() {
   const { play, pause, isPlaying } = usePlayerState({
     audioRef: player,
     sourceRef: source,
-    url: "https://s5.radio.co/s23b8ada46/listen",
+    url: "https://jah-jah-radio.radiocult.fm/stream",
   });
 
   function handleClick() {
@@ -30,11 +31,21 @@ export default function Radio() {
     clickAudio?.current?.play();
   }
 
+  const title =
+    liveData.success && liveData.result.status === "schedule"
+      ? liveData.result.content.title
+      : liveData.success && liveData.result.status === "defaultPlaylist"
+        ? liveData.result.content.name
+        : liveData.success && liveData.result.status === "offAir"
+          ? liveData.result.content
+          : undefined;
+
   return (
     <div className="relative mx-2 w-full max-w-[1920px] md:mx-8">
       <RadioIllustration className="w-full" />
       <RadioScreen
         className="absolute left-[4%] top-[61%] h-[24%] w-[67%]"
+        title={title}
         isPlaying={isPlaying}
       />
       <div

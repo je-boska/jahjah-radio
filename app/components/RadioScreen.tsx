@@ -5,9 +5,11 @@ import PlayIcon from "./icons/PlayIcon";
 import Marquee from "react-fast-marquee";
 
 export default function RadioScreen({
+  title,
   isPlaying,
   className,
 }: {
+  title?: string;
   isPlaying: Boolean | undefined;
   className?: string;
 }) {
@@ -23,9 +25,7 @@ export default function RadioScreen({
               className="w-full font-sans text-base italic md:text-xl xl:text-3xl"
               autoFill
             >
-              <p className="pr-8">
-                Live broadcast from Jah Jah x Adidas x Snipes celebration event
-              </p>
+              <p className="pr-8">{title}</p>
             </Marquee>
           </div>
         </div>
