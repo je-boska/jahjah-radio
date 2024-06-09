@@ -3,6 +3,41 @@ import LocationIcon from "./components/icons/LocationIcon";
 import Radio from "./components/Radio";
 import { LiveAPIResponse } from "@/types/shared";
 
+const artists = [
+  {
+    name: "Daqui",
+    time: "11:00",
+  },
+  {
+    name: "Melanin (live + DJ)",
+    time: "12:00",
+  },
+  {
+    name: "Dr Wax",
+    time: "13:00",
+  },
+  {
+    name: "Bob Marlich",
+    time: "14:00",
+  },
+  {
+    name: "Podcast: How To Undertake Creative Projects In Paris? Animated by Tuco Gadamn, with Melanin and Mosiah Levy",
+    time: "15:00",
+  },
+  {
+    name: "TBA",
+    time: "16:00",
+  },
+  {
+    name: "Monomite",
+    time: "17:00",
+  },
+  {
+    name: "Mosiah Levy",
+    time: "18:00",
+  },
+];
+
 export default async function Home() {
   const liveData = (await fetch(
     "https://api.radiocult.fm/api/station/jah-jah-radio/schedule/live",
@@ -34,35 +69,14 @@ export default async function Home() {
       </section>
       <section className="px-4 md:px-8">
         <div className="grid grid-cols-[1fr,5fr] border-4 border-black bg-JJ-lightGray p-4 font-serif text-2xl md:block md:py-8 md:text-center md:text-4xl xl:border-8 xl:text-7xl">
-          <span className="pr-2 xl:pr-4">11:00</span>
-          <span className="text-right text-JJ-blue md:pr-2 xl:pr-4">Daqui</span>
-          <span className="pr-2 xl:pr-4">12:00</span>
-          <span className="text-right text-JJ-blue md:pr-2 xl:pr-4">
-            Melanin (live + DJ)
-          </span>
-          <span className="pr-2 xl:pr-4">13:00</span>
-          <span className="text-right text-JJ-blue md:pr-2 xl:pr-4">
-            Dr Wax
-          </span>
-          <span className="pr-2 xl:pr-4">14:00</span>
-          <span className="text-right text-JJ-blue md:pr-2 xl:pr-4">
-            Bob Marlich
-          </span>
-          <span className="pr-2 xl:pr-4">15:00</span>
-          <span className="text-right text-JJ-blue md:pr-2 xl:pr-4">
-            Podcast: How To Undertake Creative Projects In Paris? Animated by
-            Tuco Gadamn, with Melanin and Mosiah Levy
-          </span>
-          <span className="pr-2 xl:pr-4">16:00</span>
-          <span className="text-right text-JJ-blue md:pr-2 xl:pr-4">TBA</span>
-          <span className="pr-2 xl:pr-4">17:00</span>
-          <span className="text-right text-JJ-blue md:pr-2 xl:pr-4">
-            Monomite
-          </span>
-          <span className="pr-2 xl:pr-4">18:00</span>
-          <span className="text-right text-JJ-blue md:pr-2 xl:pr-4">
-            Mosiah Levy
-          </span>
+          {artists.map(({ name, time }) => (
+            <>
+              <span className="inline-block pr-2 xl:pr-4">{time}</span>
+              <span className="inline-block text-right text-JJ-blue md:pr-2 md:text-center xl:pr-4">
+                {name}
+              </span>
+            </>
+          ))}
         </div>
       </section>
       <section className="px-4 py-12 md:px-8 md:py-20">
