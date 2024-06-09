@@ -1,7 +1,7 @@
 import Image from "next/image";
-import LocationIcon from "./components/icons/LocationIcon";
+import LocationIcon from "./components/svg/LocationIcon";
 import Radio from "./components/Radio";
-import { LiveAPIResponse } from "@/types/shared";
+import { LiveAPIResponse } from "@/types";
 
 export default async function Home() {
   const liveData = (await fetch(

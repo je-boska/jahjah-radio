@@ -4,7 +4,7 @@ export interface EventInterface {
   title: string;
   startDateUtc: string;
   endDateUtc: string;
-  description?: JSONContent;
+  description?: JSON;
   duration: number;
   timezone: string;
   color?: string;
@@ -34,7 +34,7 @@ export interface SuccessfulLiveAPIResponse {
         content: {
           name: string;
           numberOfSongs: number;
-          duration: Minutes;
+          duration: number;
         };
       };
 }

@@ -1,12 +1,12 @@
 "use client";
 
-import RadioIllustration from "./illustrations/RadioIllustration";
+import RadioIllustration from "./svg/RadioIllustration";
 import RadioScreen from "./RadioScreen";
 import { useRef } from "react";
 import usePlayerState from "../hooks/usePlayerState";
-import PlayButtonIllustration from "./illustrations/PlayButtonIllustration";
+import PlayButtonIllustration from "./svg/PlayButtonIllustration";
 import cx from "classnames";
-import { LiveAPIResponse } from "@/types/shared";
+import { LiveAPIResponse } from "@/types";
 
 export default function Radio({ liveData }: { liveData: LiveAPIResponse }) {
   const clickAudio = useRef<HTMLAudioElement | undefined>(

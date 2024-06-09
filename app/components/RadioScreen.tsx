@@ -1,7 +1,7 @@
 "use client";
 
-import PauseIcon from "./icons/PauseIcon";
-import PlayIcon from "./icons/PlayIcon";
+import PauseIcon from "./svg/PauseIcon";
+import PlayIcon from "./svg/PlayIcon";
 import Marquee from "react-fast-marquee";
 
 export default function RadioScreen({
