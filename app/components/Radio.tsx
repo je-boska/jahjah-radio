@@ -31,8 +31,6 @@ export default function Radio({ liveData }: { liveData: LiveAPIResponse }) {
     clickAudio?.current?.play();
   }
 
-  console.log(liveData);
-
   const title =
     liveData.success && liveData.result.status === "schedule"
       ? liveData.result.content.title
