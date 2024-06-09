@@ -6,7 +6,7 @@ import { useRef } from "react";
 import usePlayerState from "../hooks/usePlayerState";
 import PlayButtonIllustration from "./illustrations/PlayButtonIllustration";
 import cx from "classnames";
-import { EventInterface, LiveAPIResponse } from "@/types/shared";
+import { LiveAPIResponse } from "@/types/shared";
 
 export default function Radio({ liveData }: { liveData: LiveAPIResponse }) {
   const clickAudio = useRef<HTMLAudioElement | undefined>(
@@ -30,6 +30,8 @@ export default function Radio({ liveData }: { liveData: LiveAPIResponse }) {
     }
     clickAudio?.current?.play();
   }
+
+  console.log(liveData);
 
   const title =
     liveData.success && liveData.result.status === "schedule"
