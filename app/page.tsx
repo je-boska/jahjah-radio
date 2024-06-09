@@ -54,7 +54,7 @@ export default async function Home() {
             Tuco Gadamn, with Melanin and Mosiah Levy
           </span>
           <span className="pr-2 xl:pr-4">16:00</span>
-          <span className="text-right text-JJ-blue md:pr-2 xl:pr-4">?</span>
+          <span className="text-right text-JJ-blue md:pr-2 xl:pr-4">TBA</span>
           <span className="pr-2 xl:pr-4">17:00</span>
           <span className="text-right text-JJ-blue md:pr-2 xl:pr-4">
             Monomite
