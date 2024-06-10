@@ -7,10 +7,12 @@ import Marquee from "react-fast-marquee";
 export default function RadioScreen({
   title,
   isPlaying,
+  isLive,
   className,
 }: {
   title?: string;
   isPlaying: Boolean | undefined;
+  isLive: boolean;
   className?: string;
 }) {
   return (
@@ -18,7 +20,7 @@ export default function RadioScreen({
       <div className="relative flex h-full w-full items-center">
         <div className="w-full">
           <h2 className="hidden pl-4 font-serif text-lg md:block lg:text-2xl xl:pb-2 xl:text-3xl">
-            NOW PLAYING:
+            {isLive ? "LIVE NOW:" : "NOW PLAYING:"}
           </h2>
           <div className="w-full pr-7 md:pr-0">
             <Marquee

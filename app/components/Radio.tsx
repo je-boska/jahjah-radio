@@ -47,6 +47,7 @@ export default function Radio({ liveData }: { liveData: LiveAPIResponse }) {
         className="absolute left-[4%] top-[61%] h-[24%] w-[67%]"
         title={title}
         isPlaying={isPlaying}
+        isLive={liveData.success && liveData.result.status === "schedule"}
       />
       <div
         className={cx("absolute  h-[26%] w-[9%]", {
