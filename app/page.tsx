@@ -59,23 +59,43 @@ export default async function Home() {
           </p>
         </div>
         <div className="flex flex-col items-center pt-12 text-center md:pt-20">
-          <div className="pb-8">
-            <LocationIcon className="h-12 w-12 xl:h-20 xl:w-20" />
-          </div>
-          <p className="pb-20 font-serif text-xl md:text-2xl xl:text-5xl">
-            JAH JAH STUDIO
-            <br />
-            34 RUE DES PETITES ÉCURIES
-            <br />
-            75010 PARIS
-          </p>
           <Link
-            href="https://www.instagram.com/jahjahparis/"
+            className="flex flex-col items-center"
+            href="https://maps.app.goo.gl/wHEYcgf3rw5pFdJNA"
             target="_blank"
             rel="noopener nofollow noreferrer"
           >
-            <InstagramLogo className="h-20 w-20" />
+            <div className="pb-8">
+              <LocationIcon className="h-12 w-12 xl:h-20 xl:w-20" />
+            </div>
+            <p className="pb-20 font-serif text-xl md:text-2xl xl:text-5xl">
+              JAH JAH STUDIO
+              <br />
+              34 RUE DES PETITES ÉCURIES
+              <br />
+              75010 PARIS
+            </p>
           </Link>
+          <div className="grid grid-cols-2 gap-6 font-serif text-lg sm:gap-8 md:gap-12 md:text-2xl xl:text-3xl">
+            <Link
+              className="flex flex-col items-center"
+              href="https://www.instagram.com/jahjahparis/"
+              target="_blank"
+              rel="noopener nofollow noreferrer"
+            >
+              <InstagramLogo className="mb-2 h-12 w-12 xl:mb-4 xl:h-20 xl:w-20" />
+              <span>RESTAURANT</span>
+            </Link>
+            <Link
+              className="flex flex-col items-center"
+              href="https://www.instagram.com/jahjahstudioparis/"
+              target="_blank"
+              rel="noopener nofollow noreferrer"
+            >
+              <InstagramLogo className="mb-2 h-12 w-12 xl:mb-4 xl:h-20 xl:w-20" />
+              <span>STUDIO</span>
+            </Link>
+          </div>
         </div>
       </section>
       <section className="px-4 pb-20 md:px-8">
