@@ -2,6 +2,8 @@ import Image from "next/image";
 import LocationIcon from "./components/svg/LocationIcon";
 import Radio from "./components/Radio";
 import { LiveAPIResponse } from "@/types";
+import InstagramLogo from "./components/svg/InstagramLogo";
+import Link from "next/link";
 
 export default async function Home() {
   const liveData = (await fetch(
@@ -60,13 +62,20 @@ export default async function Home() {
           <div className="pb-8">
             <LocationIcon className="h-12 w-12 xl:h-20 xl:w-20" />
           </div>
-          <p className="font-serif text-xl md:text-2xl xl:text-5xl">
+          <p className="pb-20 font-serif text-xl md:text-2xl xl:text-5xl">
             JAH JAH STUDIO
             <br />
             34 RUE DES PETITES ÉCURIES
             <br />
             75010 PARIS
           </p>
+          <Link
+            href="https://www.instagram.com/jahjahparis/"
+            target="_blank"
+            rel="noopener nofollow noreferrer"
+          >
+            <InstagramLogo className="h-20 w-20" />
+          </Link>
         </div>
       </section>
       <section className="px-4 pb-20 md:px-8">
