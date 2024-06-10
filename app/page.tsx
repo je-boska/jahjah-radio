@@ -15,7 +15,7 @@ export default async function Home() {
 
   return (
     <main className="min-h-screen">
-      <section className="flex justify-center pt-12 md:pb-20 md:pt-20">
+      <section className="flex justify-center py-12 md:py-20">
         <Radio liveData={liveData} />
         <Image
           className="absolute right-4 top-4 w-28 md:right-8 md:top-8 md:w-56 xl:top-12 xl:w-80"
