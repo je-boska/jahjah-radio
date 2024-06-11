@@ -190,8 +190,8 @@ export default async function Home() {
             <Image
               src="/adidas.png"
               alt="Adidas logo"
-              height="675"
-              width="1200"
+              height="559"
+              width="801"
             />
           </div>
           <div>
