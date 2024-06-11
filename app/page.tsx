@@ -57,10 +57,10 @@ export default async function Home() {
             Podcast: How To Undertake Creative Projects In Paris? Animated by
             Tuco Gadamn, with Melanin and Mosiah Levy
           </span>
-          <span className="inline-block pr-2 xl:pr-4">16:00</span>
+          {/* <span className="inline-block pr-2 xl:pr-4">16:00</span>
           <span className="inline-block text-right text-JJ-blue md:pr-2 md:text-center xl:pr-4">
             TBA
-          </span>
+          </span> */}
           <span className="inline-block pr-2 xl:pr-4">17:00</span>
           <span className="inline-block text-right text-JJ-blue md:pr-2 md:text-center xl:pr-4">
             Monomite
