@@ -4,6 +4,7 @@ import Radio from "./components/Radio";
 import { LiveAPIResponse } from "@/types";
 import InstagramLogo from "./components/svg/InstagramLogo";
 import Link from "next/link";
+import YouTubePlayer from "./components/YouTubePlayer";
 
 export default async function Home() {
   const liveData = (await fetch(
@@ -68,17 +69,7 @@ export default async function Home() {
         </div>
       </section>
       <section className="pt-20">
-        <div className="w-full px-4 md:px-20 xl:px-40">
-          <iframe
-            className="aspect-video h-full w-full"
-            src="https://www.youtube.com/embed/mhtFN1pw0HQ?si=nU-QnohCU-ywi--w"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          />
-        </div>
+        <YouTubePlayer />
       </section>
       <section className="px-4 py-12 md:px-8 md:py-20">
         <div className="mx-auto max-w-4xl text-center font-sans text-lg italic md:text-2xl xl:text-3xl">
