@@ -57,10 +57,6 @@ export default async function Home() {
             Podcast: How To Undertake Creative Projects In Paris? Animated by
             Tuco Gadamn, with Melanin and Mosiah Levy
           </span>
-          {/* <span className="inline-block pr-2 xl:pr-4">16:00</span>
-          <span className="inline-block text-right text-JJ-blue md:pr-2 md:text-center xl:pr-4">
-            TBA
-          </span> */}
           <span className="inline-block pr-2 xl:pr-4">17:00</span>
           <span className="inline-block text-right text-JJ-blue md:pr-2 md:text-center xl:pr-4">
             Monomite
@@ -69,6 +65,19 @@ export default async function Home() {
           <span className="inline-block text-right text-JJ-blue md:pr-2 md:text-center xl:pr-4">
             Mosiah Levy
           </span>
+        </div>
+      </section>
+      <section className="pt-20">
+        <div className="w-full px-4 md:px-20 xl:px-40">
+          <iframe
+            className="aspect-video h-full w-full"
+            src="https://www.youtube.com/embed/mhtFN1pw0HQ?si=nU-QnohCU-ywi--w"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          />
         </div>
       </section>
       <section className="px-4 py-12 md:px-8 md:py-20">
