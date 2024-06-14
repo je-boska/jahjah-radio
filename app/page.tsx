@@ -31,7 +31,7 @@ export default async function Home() {
           Thursday June 13th
         </h2>
         <p className="font-sans text-xl italic md:text-2xl xl:text-4xl">
-          Jah Jah launches Jah Jah Radio to celebrate the Adidas x Snipes
+          Jah Jah launched Jah Jah Radio to celebrate the Adidas x Snipes
           collaboration
         </p>
       </section>
@@ -74,13 +74,13 @@ export default async function Home() {
       <section className="px-4 py-12 md:px-8 md:py-20">
         <div className="mx-auto max-w-4xl text-center font-sans text-lg italic md:text-2xl xl:text-3xl">
           <p className="pb-6">
-            Join us in Paris this Thursday, June 13, to celebrate the Snipes x
-            Adidas collaboration at the Jah Jah Studio.
+            On Thursday, June 13, we celebrated the Snipes x Adidas
+            collaboration at the Jah Jah Studio.
           </p>
           <p>
-            This event will also be an opportunity to bring together various
-            artists to celebrate the Snipes x Adidas pair and the launch of Jah
-            Jah Radio with live performances, dj sets and talks.
+            This event was an opportunity to bring together various artists to
+            celebrate the Snipes x Adidas pair and the launch of Jah Jah Radio
+            with live performances, dj sets and talks.
           </p>
         </div>
         <div className="flex flex-col items-center pt-12 text-center md:pt-20">
